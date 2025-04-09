@@ -82,7 +82,6 @@ body {
 .btn-hire-me {
   background-color: #1f3b4d;
 }
-
 .header-img {
   display: flex;
   width: 40%;
@@ -93,7 +92,6 @@ body {
   padding-left: 10px;
   align-items: center;
 }
-
 .header-img img {
   width: 50vh;
   height: 50vh;
@@ -104,44 +102,12 @@ body {
   border-width: 5px;
   border-color: #deb887;
 }
-/* Skills Section */
-.skills {
-  height: 100vh;
-  position: relative;
-  display: grid;
-  grid-template-columns: 30% auto;
-  gap: 20px;
-}
 
-.skills-header {
-  text-align: center;
-  grid-column: 1 / span 2;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills h3 {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Contact & Projects Sections */
-.contact,
-.projects {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-}
-
+/* Contact Sections */
 .contact {
   width: 100%;
   height: 100vh;
   display: flex;
-  background-color: #1f3b4d;
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -156,13 +122,131 @@ body {
   background-color: #fff;
   border-radius: 10px;
   padding: 40px 20px;
+  align-items: center;
 }
 
 .contact-card h2 {
+  font-size: 2rem;
+  font-weight: 700;
   display: flex;
   width: 100%;
   height: auto;
   justify-content: center;
+  margin-bottom: 30px;
+}
+
+.contact-card p{
+  margin-bottom: 10px;
+}
+
+.contact-card i.fa{
+  margin-right: 20px;
+  font-size: 24px;
+}
+
+.contact-phone-icon{
+  margin-left: 2px;
+}
+
+/* Projects Section */
+.projects {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects h2{
+  font-size:  2rem;
+  font-weight: 700;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.project-div{
+  display: flex;
+  margin: 0 ;
+  padding: 0;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto; 
+  white-space: nowrap;
+}
+
+.project-div::-webkit-scrollbar {
+  display: none;
+}
+
+.project-list{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.project-list li{
+  flex: 0 0 auto;
+  min-width: 200px;
+  height: auto;
+  background: white;
+  border-radius: 8px;
+  color: black;
+  padding: 20px;
+  width: 500px;
+  -ms-overflow-style: none;
+  transition: 0.3s ease ;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  word-wrap: break-word; 
+  max-width: 400px;
+}
+
+.project-list h3{
+  color: #1f3b4d;
+  font-size: 1.5rem;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+/* Skills Section */
+.skills-section{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  padding-top: 40px;
+}
+.skills {
+  display: grid;
+  height: 100%;
+  padding: 20px 20px;
+    grid-template-columns: repeat(3, 1fr);;
+  gap: 20px;
+  align-content: center;
+}
+
+.skills-header {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  color: wheat;
+  justify-content: center;
+  align-items: center;
+}
+
+.item{
+  flex: 2;
+  display: flex;
+  height: auto;
+  background-color: white;
+  color: #000;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 /* Responsive Styles */
@@ -260,7 +344,6 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    background-color: #1f3b4d;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -268,8 +351,8 @@ body {
 
   .contact-card {
     display: flex;
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;

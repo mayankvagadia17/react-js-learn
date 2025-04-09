@@ -149,14 +149,20 @@ body {
 
 .contact-card {
   display: flex;
+  width: 50%;
+  height: 50%;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: auto;
   color: #000;
   background-color: #fff;
   border-radius: 10px;
+  padding: 40px 20px;
+}
+
+.contact-card h2 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
 }
 
 /* Responsive Styles */
@@ -262,11 +268,11 @@ body {
 
   .contact-card {
     display: flex;
+    width: 60%;
+    height: 60%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: auto;
     color: #000;
     background-color: #fff;
     border-radius: 10px;

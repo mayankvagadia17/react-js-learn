@@ -2,40 +2,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="header">
       <div class="header-text">
         <h1>Mayank Vagadiya</h1>
         <h4>Senior Software developer</h4>
-      </div>
-      <div class="header-img">
-        <img src="../img/myImg.JPG" alt="mayank vagadiya" height="400" />
-      </div>
-    </div>
-    <div class="aboutme">
-      <div>
-        <h2>About Me</h2>
-      </div>
-      <div>
         <p>
           I am a software developer with experience in various programming
           languages and frameworks. I enjoy solving complex problems and
           building efficient solutions.
         </p>
+        <div class="header-button">
+          <button class="btn-download-cv">Download CV</button>
+          <button class="btn-hire-me">Hire Me</button>
+        </div>
+      </div>
+      <div class="header-img">
+        <img src="../img/myImg.JPG" alt="mayank vagadiya" />
       </div>
     </div>
     <div class="contact">
-      <h2>Contact</h2>
-      <p>Phone : +91 70160 69040</p>
-      <p>Email : mayankvagadia17@gmail.com</p>
-      <p>Address : Gujarat, India</p>
-      <a href="https://www.linkedin.com/in/mayank-vagadia-539423182/"
-        >Linkdin</a
-      >
+      <div class="contact-card">
+        <h2>Contact</h2>
+        <p><i class="fa fa-phone">: +91 70160 69040</i></p>
+        <p><i class="fa fa-envelope">: mayankvagadia17@gmail.com</i></p>
+        <p><i class="fas fa-cat">: Gujarat, India</i></p>
+        <a href="https://www.linkedin.com/in/mayank-vagadia-539423182/"
+          >Linkdin</a
+        >
+      </div>
     </div>
     <div class="projects">
       <h2>Projects</h2>
@@ -121,51 +125,39 @@
       </ul>
     </div>
     <div class="skills">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>Java</li>
-            <li>Kotlin</li>
-            <li>Dart</li>
-            <li>Node JS</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Libraries/Frameworks</h3>
-          <ul>
-            <li>Android SDK</li>
-            <li>Flutter</li>
-            <li>Kotlin Multiplatform</li>
-          </ul>
-        </li>
-        <li>
-          <h3>DevOps</h3>
-          <ul>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Atlassian Jira</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Databases</h3>
-          <ul>
-            <li>SQLite</li>
-            <li>Firebase Realtime Database</li>
-            <li>Cloud Firestore</li>
-            <li>Room</li>
-            <li>MongoDB</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Other Technologies</h3>
-          <ul>
-            <li>REST API</li>
-            <li>Jetpack components</li>
-          </ul>
-        </li>
-      </ul>
+      <h2 class="skills-header">Technical Skills</h2>
+      <h3>Programming Languages</h3>
+      <div>
+        <p>Java</p>
+        <p>Kotlin</p>
+        <p>Dart</p>
+        <p>Node JS</p>
+      </div>
+      <h3>Libraries/Frameworks</h3>
+      <div>
+        <p>Android SDK</p>
+        <p>Flutter</p>
+        <p>Kotlin Multiplatform</p>
+      </div>
+      <h3>DevOps</h3>
+      <div>
+        <p>Git</p>
+        <p>GitHub</p>
+        <p>Atlassian Jira</p>
+      </div>
+      <h3>Databases</h3>
+      <div>
+        <p>SQLite</p>
+        <p>Firebase Realtime Database</p>
+        <p>Cloud Firestore</p>
+        <p>Room</p>
+        <p>MongoDB</p>
+      </div>
+      <h3>Other Technologies</h3>
+      <div>
+        <p>REST API</p>
+        <p>Jetpack components</p>
+      </div>
     </div>
   </body>
 </html>

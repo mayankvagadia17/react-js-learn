@@ -1,73 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+/* Global Styles */
 body {
   margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  background-color: #201c24;
+  color: #fff;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Header Section */
 .header {
-  position: relative;
-  background-color: #f0f0f0;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  background-image: url("../img/bg-graphic.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-image: none;
+  padding: 0 20px;
 }
-.contact,
-.projects,
-.skills {
-  position: relative;
-  background-color: #f0f0f0;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-}
-.header .header-text {
+
+.header-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40%;
-  height: 100vh;
-  position: absolute;
-  text-align: center;
-}
-.header .header-text h1 {
-  color: #1f3b4d;
-}
-.header .header-text h4 {
-  color: #1f3b4d;
-}
-.header .header-img {
-  display: flex;
   width: 60%;
   height: 100vh;
-  position: absolute;
+  text-align: center;
+  color: #fff;
+  gap: 1rem;
+}
+
+.header-text h1,
+.header-text h4,
+.header-text p {
+  color: #fff;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.header-text h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.header-text p {
+  font-size: 0.8rem;
+  width: 80%;
+  font-weight: 200;
+}
+.header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  gap: 1rem;
+}
+.header-button button {
+  width: 50%;
+  margin-top: 30px;
+  padding: 13px 26px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+}
+.btn-download-cv {
+  background-color: #deb887;
+}
+.btn-hire-me {
+  background-color: #1f3b4d;
+}
+
+.header-img {
+  display: flex;
+  width: 40%;
+  height: 100vh;
   margin: 0 auto;
   top: 0;
   right: 0;
   padding-left: 10px;
   align-items: center;
 }
-.header .header-img img {
-  width: 80%;
-  height: 80%;
+
+.header-img img {
+  width: 50vh;
+  height: 50vh;
   object-fit: cover;
-  top: 0;
-  left: 0;
-  border-radius: 40px;
+  border-radius: 50%;
   padding: 10px;
   border-style: solid;
   border-width: 5px;
-  border-color: white;
+  border-color: #deb887;
 }
-.aboutme {
-  position: flex;
-  background-color: #f0f0f0;
+/* Skills Section */
+.skills {
+  height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% auto;
+  gap: 20px;
+}
+
+.skills-header {
+  text-align: center;
+  grid-column: 1 / span 2;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills h3 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact & Projects Sections */
+.contact,
+.projects {
   width: 100%;
   height: 100vh;
-  flex-direction: row;
+  margin: 0;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #1f3b4d;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-image: none;
+    background-color: #201c24;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    gap: 1rem;
+    color: #fff;
+  }
+
+  .header-text h1,
+  .header-text h4,
+  .header-text p {
+    color: #fff;
+  }
+
+  .header-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .header-text h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .header-text p {
+    font-size: 0.8rem;
+    width: 80%;
+    font-weight: 200;
+  }
+  .header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    gap: 1rem;
+  }
+  .header-button button {
+    width: 50%;
+    margin-top: 30px;
+    padding: 13px 26px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+  }
+  .btn-download-cv {
+    background-color: #deb887;
+  }
+  .btn-hire-me {
+    background-color: #1f3b4d;
+  }
+
+  .header-img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-img img {
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #deb887;
+  }
+
+  .contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #1f3b4d;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+  }
 }
